@@ -6,7 +6,7 @@ const letterCounter = (wordInput) =>{
     //takes input and makes it lowercase, finds only letters and puts //it into an array with RegEx. sorts my alphabetical order
     wordInput = wordInput.toLowerCase().match(/[a-z]/g).sort()
     //create empty object for letter count
-    let letterCounts = {};
+    letterCounts = {};
     //loops through the array and creates counter to add letter count as key/value pairs
     for(let i=0; i<wordInput.length; i++){
       let letters = wordInput[i];
@@ -27,3 +27,8 @@ const letterCounter = (wordInput) =>{
         element.append(li);
       }
     };
+    
+const reset = () => {
+  document.getElementById("strInput").value = "";
+  document.getElementById("showCount").innerHTML = "";
+}
