@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+<<<<<<< HEAD
+=======
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
+>>>>>>> origin
     <title>Count It</title>
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>Letter Count Time</h1>
+    <header>
+        <h1>Letter Count Time</h1>
+    </header>
+    <main>
+        <label for="strInput">Enter in some text and get a letter count!</label>
+        <input id="strInput" name="strInput" value="" placeholder="Enter text here">
+        <button onclick="letterCounter()" id="enterBtn" type="button">Voila!</button>
+        <button onclick="reset()" id="reset" type="button">Reset</button>
+        <ul id="showCount" style="font-size: 16px; color: navy; font-family: 'Bentham', serif;"></ul>
+    <main>
 </body>
 </html>
