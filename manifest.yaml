@@ -1,5 +1,5 @@
 ---
-- name: count-it-test-app
+- name: count-it
   memory: 256M
   disk_quota: 512M
   path: /dev/myNodejsApp
