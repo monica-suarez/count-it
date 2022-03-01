@@ -1,0 +1,14 @@
+---
+- name: count-it-test-app
+  memory: 256M
+  disk_quota: 512M
+  path: /dev/myNodejsApp
+  buildpack: nodejs_buildpack
+  host: nodejs001
+  domain: mybluemix.net
+  command: node app.js
+  timeout: 80
+  services:
+  - mongo_8917
+  env:
+    env_type: production
